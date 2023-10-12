@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+// import favicon from '/favicon.ico'
 import {Helmet} from "react-helmet";
 import './App.css'
 
@@ -11,7 +11,7 @@ function App() {
       <Helmet>
 
         <title>prushton.com</title>
-        <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
         <meta property="og:title" content="prushton.com" />
         <meta property="og:type" content="website" />

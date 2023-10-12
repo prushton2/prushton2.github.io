@@ -1,30 +1,30 @@
-import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+import {Helmet} from "react-helmet";
+import './App.css'
 
 function App() {
 
-  document.title = "prushton.com";
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>
-          <p>
-            Peter Rushton <br />
-          </p>
+    <>
+      <Helmet>
 
-          <p>
-            UMass Lowell Computer Science Student <br />
-          </p>
+        <title>prushton.com</title>
+        <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
 
-          <p>
-            <a href="https://github.com/prushton2" style={{color: "grey"}}>Github</a>
-          </p>
-        </div>
-      </header>
-    </div>
-  );
+        <meta property="og:title" content="prushton.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://prushton.com" />
+        <meta property="og:image" content="https://prushton.com/favicon.ico" />
+        <meta property="og:description" content="Peter Rushton - UMass Lowell" />
+      </Helmet>
+
+      <label className="name">Peter Rushton</label> <br />
+      <label className="subtitle">UMass Lowell - Computer Science</label> <br />
+      <h2><a href="https://github.com/prushton2" className="url"><u>Github</u></a></h2>
+    </>
+  )
 }
 
-export default App;
+export default App
